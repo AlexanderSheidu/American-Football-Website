@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- This website gives comprehensive information on the Super Bowls, and what happened in them,
+        statistics, history, etc. -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <center>
+            <title>American Football Super Bowl</title>
+        </center>
+        <div style="text-align: right;">
+            <button onclick="location.href='/logout'">Logout</button>
+        </div>
+    </head>
+    <body>
+        <h1>Super Bowl History and Statistics</h1>
+        <a href="https://www.espn.com/nfl/story/_/id/39416949/super-bowl-history-facts-stats-records" target="_blank">Super Bowl History and Facts</a>
+        <h1>Super Bowl History</h1>
+        <p>The Super Bowl is rich in history as it is the annual American football game 
+            that determines the champion of the National Football League (NFL). The game
+            culminates a season that begins in the previous calendar year, and is the 
+            conclusion of the NFL playoffs. The first Super Bowl was held on January 15, 1967. 
+            Since then, it has become a significant event in American sports and culture, with 
+            traditions such as elaborate halftime shows, commercials, and parties.
+        </p>
+        <h2>Teams with the most Super Bowl wins</h2>
+        <ol>
+            <li>Pittsburgh Steelers: 6 wins</li>
+            <li>New England Patriots: 6 wins</li>
+            <li>San Francisco 49ers: 5 wins</li>
+            <li>Dallas Cowboys: 5 wins</li>
+            <li>Green Bay Packers: 4 wins</li>
+        </ol>
+        <center><img src={{url_for('static', filename='American Football Super Bowl.png')}} width = 325 height = 325></center>
+        <h2>Statistics about the Super Bowl</h2>
+        <ul>
+            <li>The first Super Bowl was between the Green Bay Packers and the Kansas City Chiefs, 
+                with the Packers winning 35-10
+            </li>
+            <li>A total of 20 franchises, including teams that have relocated to another city or 
+                changed their name, have won the Super Bowl
+            </li>
+            <li>The 1972 Miami Dolphins capped off the only perfect season in NFL history with 
+                their victory in Super Bowl VII
+            </li>
+            <li>Only two franchises have ever won the Super Bowl while hosting at their home stadiums:
+                 the Tampa Bay Buccaneers in Super Bowl LV and the Los Angeles Rams in Super Bowl LVI
+            </li>
+            <li>The most recent Super Bowl, LVIII, was between the Kansas City Chiefs and the San 
+                Francisco 49ers, with the Chiefs winning 25-22
+            </li>
+        </ul>
+        <h2>Learn more about the Super Bowl</h2>
+        <a href="https://www.pro-football-reference.com/super-bowl/" target="_blank">Super Bowl Statistics</a>
+        <h3>{{dt}}</h3>
+        <h3>More pages</h3>
+        <select onchange="location = this.value;">
+            <option value="">Select a page</option>
+            <option value="/index">Index</option>
+            <option value="/news">News</option>
+        </select>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- This website, helps understand the rules, and the statistics of American Football
+        in general. -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <center>
+            <title>American Football Index</title>
+        </center>
+        <div style="text-align: right;">
+            <button onclick="location.href='/logout'">Logout</button>
+        </div>
+    </head>
+    <body>
+        <h1>American Football facts</h1>
+        <p><a href="https://www.britannica.com/sports/American-football" target="_blank">American Football facts</a> 
+            (referred to simply as football in the United States and Canada), alternatively known as gridiron football,
+            is a team sport, in which two teams of eleven players on a rectangular field with goalposts at each end 
+            play against each other.</p>
+            <center><img src={{url_for('static', filename='American Football Touchdown.jpg')}} width = 325 height = 325></center>
+        <h1>Resource on How is American Football played?</h1>
+        <p><a href="https://howtheyplay.com/team-sports/American-Football-Basic-Objectives-and-Scoring-Methods#:~:text=Football%20is%20like%20a%20war%20over%20territory%2C%20with,and%20the%20referee%20meet%20for%20a%20coin%20toss." target="_blank">How American Football is played</a> 
+    
+        <h2>Offense and defense</h2>
+        <ol>
+            <li>The offensive team is the team with possession of the oval-shaped football, attempts to advance down 
+            the field by running with the ball or passing it</li>
+            <li>The defense, the team without possession of the ball, aims to stop the offense's advance 
+            and to take control of the ball for themselves</li>
+            <li> A safety is a scoring play that results in a team getting 2 points on the scoreboard. It can occur if the offense 
+            records a penalty in their own end zone, a ball carrier gets tackled in their own end zone after having the ball 
+            outside of the end zone at any point during the play, or a fumble or other loose ball gets knocked out of the 
+            back of the possessing team's end zone, or out of bounds in the end zone.
+            </li>
+            <li>Also known as a point-after-touchdown (PAT), it is a scoring opportunity in American football that takes 
+            place immediately after a touchdown. The extra point allows a team to earn an additional point, bringing
+            the total score for the scoring play to 7 points
+            </li>
+            <li>In a two-point conversion attempt, the team that just scored must run a play from scrimmage 
+            close to the opponent's goal line and advance the ball across the goal line in the same manner 
+            as if they were scoring a touchdown. If the team succeeds, it earns two additional points on top
+            of the six points for the touchdown, for a total of eight points
+            </li>
+            <li>A touchdown is a scoring play in gridiron football. Whether running, passing, returning a kickoff or punt, 
+            or recovering a turnover, a team scores a touchdown by advancing the ball into the opponent's end zone.
+            </li>
+            <li>A kickoff is a method of starting a drive in gridiron football. Typically, a kickoff consists of one team - the 
+            kicking team - kicking the ball to the opposing team - the receiving team
+            </li>
+            <li>Onside Kick: An onside kick is a strategic move used in American football during a kickoff. The objective is 
+                for the kicking team to regain possession of the ball instead of kicking it far downfield to the receiving team.
+            </li>
+        </ol>
+
+        <center><img src={{url_for('static', filename='American Football Field Goal.jpg')}} width = 325 height = 325></center>
+
+        <h3>Advance</h3>
+       <p>The offense must advance at least ten yards in four downs or plays</p>
+       <ul>
+            <li>if they fail, they turn over the football to the defense</li> 
+            <li>but if they succeed, they are given a new set of four downs 
+            to continue the drive.</li> 
+            <li>Points are scored primarily by advancing the ball into the opposing team's end zone for a touchdown 
+            or kicking the ball through the opponent's goalposts for a field goal.</li>
+            <li>Longest Field Goal in College Football: The longest field goal made in college football history was 
+            69 yards long. The kick was made by Abilene Christian University's kicker, Ove Johansson, on October 16, 1976.
+            </li>
+            <li>Longest Field Goal in NFL: The longest field goal in NFL history is 66 yards, made by Justin Tucker of 
+            the Baltimore Ravens.
+            </li>
+            <li>American football is a hodgepodge that developed from two sports: rugby and soccer.</li>
+            <li>College and professional games last 60 minutes, divided into four quarters of 15 minutes.
+            The plays have frequent stops, so a game might last 2.5-3 hours or more.
+            </li>
+            <li>The first game of football was played between Rutgers and Princeton colleges on November 6, 1869.
+            </li>
+
+        </ul>  
+        <p>The team with the most points at the end of a game wins.</p>
+        
+        <h1>Learn more about American Football</h1>
+        <a href="https://thefactfile.org/american-football-facts/" target="_blank">American Football Facts, in depth</a>
+
+        <h3>{{dt}}</h3>
+        <h3>More pages</h3>
+        <select onchange="location = this.value;">
+            <option value="">Select a page</option>
+            <option value="/news">News</option>
+            <option value="/superbowl">Super Bowl</option>
+        </select>
+    </body>
+</html>

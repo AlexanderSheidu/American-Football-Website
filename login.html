@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- This website allows the user to login, and go to the Index, News, or Super Bowl 
+    pages. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+        <title>Login</title>
+    </center>
+</head>
+<body>
+    <center>
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="page">Select Page:</label>
+            <select id="page" name="page">
+                <option value="index">Index</option>
+                <option value="news">News</option>
+                <option value="superbowl">Super Bowl</option>
+            </select>
+            <br><br>
+            <button type="submit"><strong>Login</strong></button><br>
+        </form>
+        <h3></h3>
+        <button onclick="location.href='/registration'">Go to Registration</button>
+        <h3></h3>
+        <button onclick="location.href='/update'">Update Password</button>
+        <h3>{{dt}}</h3>
+    </center>
+</body>
+</html>

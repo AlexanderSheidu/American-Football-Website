@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- This website, gives information, about the news and statistics 
+        in the NFL, and in Pro Football -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <center>
+            <title>American Football News</title>
+        </center>
+        <div style="text-align: right;">
+            <button onclick="location.href='/logout'">Logout</button>
+        </div>
+    </head>
+    <body>
+        <h1>Pro Football and NFL News</h1>
+        <a href="https://coltswire.usatoday.com/lists/2024-nfl-draft-colts-scouting-combine-prospects-invites/" target="_blank">American Football News</a>
+        <h1>How football players shape the sport of Football</h1>
+        <p>American Football is full of elite athletes and prospects, who without them, the sport could
+            not grow, every player has a life-story. It is important for the NFL to push for the sport,
+            outside of the country, for the game to get more popular.
+        </p>
+        <h1>The history of American football, and some good and bad moments</h1>
+        <p>Despite, many controversies, both in the past and recently, the game of Football is still
+            America's favorite sport. Although, the Washington Redskins got changed to the Commanders,
+            and despite many players getting close calls in terms of injuries, there has been a surge
+            in the supporters around the world, that American Football garners.
+        </p>
+        <center><img src={{url_for('static', filename='American Football.png')}} width = 325 height = 325></center>
+        <h2>The quarterbacks with the most career passing yards</h2>
+        <ol>
+            <li>Tom Brady</li>
+            <li>Drew Brees</li>
+            <li>Peyton Manning</li>
+            <li>Brett Favre</li>
+            <li>Ben Roethlisberger</li>
+        </ol>
+        <h3>Some Pro footballers Hall of Famers</h3>
+        <ul>
+            <li>Ronde Barber</li>
+            <li>Darrelle Revis</li>
+            <li>Joe Thomas</li>
+            <li>Zach Thomas</li>
+        </ul>
+
+        <h2>NFL Standings 2023-2024 Season</h2>
+        <table border="1">
+            <tr><th>Ranking</th><th>Team</th><th>W</th><th>L</th><th>T</th></tr>
+            <tr><td>1</td><td>Ravens</td><td>13</td><td>4</td><td>0</td></tr>
+            <tr><td>2</td><td>49ers</td><td>12</td><td>5</td><td>0</td></tr>
+            <tr><td>3</td><td>Cowboys</td><td>12</td><td>5</td><td>0</td></tr>
+            <tr><td>4</td><td>Lions</td><td>12</td><td>5</td><td>0</td></tr>                
+               
+        </table>
+
+        <h2>Check out more of the NFL and News</h2>
+        <a href="https://bleacherreport.com/nfl" target="_blank">More of American Football News</a>
+        <h3>{{dt}}</h3>
+        <h3>More pages</h3>
+        <select onchange="location = this.value;">
+            <option value="">Select a page</option>
+            <option value="/index">Index</option>
+            <option value="/superbowl">Super Bowl</option>
+        </select>
+    </body>
+</html>
